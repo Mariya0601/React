@@ -1,0 +1,15 @@
+.plain_link {
+    font-weight: var(--plain_text_weight_light);
+    font-size: .8rem;
+    padding: .5rem 1rem;
+    border: var(--plain_link_border);
+    background-color: var(--plain_link_background);
+    color: var(--plain_link_color);
+    width: fit-content;
+}
+
+.plain_link:hover {
+    border: var(--plain_link_border_hover);
+    background-color: var(--plain_link_background_hover);
+    color: var(--plain_link_color_hover);
+}

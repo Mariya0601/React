@@ -1,0 +1,13 @@
+.colored_link {
+    padding: .5rem 2rem;
+    border: var(--colored_link_border);
+    background-color: var(--colored_link_background);
+    color: var(--main_color);
+    font-size: .9rem;
+    text-align: center;
+}
+
+.colored_link:hover {
+    background-color: var(--colored_link_color_hover);
+    color: var(--colored_link_color);
+}

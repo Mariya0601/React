@@ -1,0 +1,19 @@
+.top__bar {
+    width: 100%;
+    background: var(--bar_background_dark);
+    padding: 1rem 0;
+}
+
+.top__bar_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top__bar_container svg path {
+    fill: var(--element_background_light);
+}
+
+.top__bar_left {
+    display: flex;
+}

@@ -1,0 +1,213 @@
+.filter {
+    display: flex;
+    color: var(--plain_text_color_dark);
+    height: 6rem;
+}
+
+.filter__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+
+.filter__container_box {
+    display: flex;
+    align-items: center;
+}
+
+.filter__filter_box {
+    display: flex;
+    justify-content: start;
+    min-width: 320px;
+    position: relative;
+}
+
+.filter__box_details {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    padding: 1rem;
+    width: 360px;
+}
+
+.filter__box_details[open] {
+    background: #fff;
+    box-shadow: 0 0 32px -15px rgba(0,0,0,0.75);
+    border: 1px solid #e2e2e2;
+}
+
+.filter__box_details[open] summary {
+    color: var(--main_color);
+}
+
+.filter__box_details[open] path {
+    fill: var(--main_color);
+}
+
+.filter__box_summary, .filter__box_content__summary {
+    display: flex;
+    justify-content: start;
+    gap: 11px;
+    padding-left: .8rem;
+    margin-bottom: .8rem;
+    cursor: pointer;
+    transition: ease-in .2s;
+}
+
+.filter__box__summary {
+    margin-bottom: .8rem;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.filter__box_summary:hover, .filter__box_content__summary:hover {
+    color: var(--main_color);
+}
+
+.filter__box_summary:hover path {
+    fill: var(--main_color);
+}
+
+.filter__box_content__details[open] summary {
+    color: var(--main_color);
+}
+
+.filter__box_content__summary {
+    color: var(--shaded_text_color);
+    line-height: 2.8rem;
+    border-left: 5px solid var(--main_color);
+    border-bottom: 1px solid #EBEBEB;
+    cursor: pointer;
+    transition: ease-in .2s;
+}
+
+.filter__box_content__items {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.filter__box_content_link {
+    padding-left: .8rem;
+    margin-bottom: .7rem;
+    color: var(--shaded_text_color);
+    transition: ease-in .2s;
+}
+
+.filter__box_content_link:hover {
+    color: var(--main_color);
+}
+
+.filter__box_content {
+    color: var(--plain_text_color_dark);
+}
+
+.filter__sort_block {
+    display: flex;
+    justify-content: start;
+    width: 400px;
+}
+
+.filter__sort_box {
+    position: relative;
+}
+
+.filter__sort_parameter {
+    display: flex;
+    justify-content: start;
+    position:absolute;
+    padding: 13px 16px 16px;
+}
+
+.filter__sort_trending{
+    flex: 2;
+}
+
+.filter__sort_size {
+    flex: 1;
+}
+
+.filter__sort_parameter[open] .filter__sort_parameter_content{
+    background: #fff;
+    box-shadow: 0 0 32px -15px rgba(0,0,0,0.75);
+    border: 1px solid #e2e2e2;
+}
+
+.filter__sort_parameter summary {
+    position: relative;
+    margin-right: 23px;
+    color: var(--shaded_text_color);
+    transition: ease-in .2s;
+    white-space: nowrap;
+}
+
+.filter__sort_parameter[open] summary {
+    color: var(--main_color);
+    margin-bottom: 5px;
+}
+
+.filter__sort_parameter summary:hover {
+    color: var(--main_color);
+    cursor: pointer;
+}
+
+.filter__sort_parameter summary::marker {
+    display: none;
+    content: "";
+}
+
+.filter__sort_parameter summary::after {
+    content: url(/src/static/img/marker.svg);
+    padding-left: 9px;
+    position: absolute;
+    top: -2px;
+}
+
+.filter__sort_parameter_content {
+    padding: 7px 30px 12px 9px;
+    margin-left: -9px;
+    color: var(--shaded_text_color);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.filter__sort_parameter_box {
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: start;
+}
+
+.filter__sort_parameter_box label:hover {
+    color: var(--main_color);
+    cursor: pointer;
+}
+
+.filter__sort_parameter_box input {
+    margin-right: 9px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #6F6E6E;
+    border-radius: 2px;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.filter__sort_parameter_box input:checked::before {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    color: white;
+}
+
+.filter__sort_parameter_box input:checked {
+    background-color: var(--main_color);
+    border-color: var(--main_color);
+}

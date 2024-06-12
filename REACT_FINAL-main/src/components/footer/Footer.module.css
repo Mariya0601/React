@@ -1,0 +1,40 @@
+.footer {
+    padding: 3rem;
+    background-color: var(--bar_background_dark);
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__rights {
+    font-size: .8rem;
+    font-weight: vAr(--plain_text_weight);
+    color: var(--plain_text_color_light);
+}
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.footer__link {
+    display: flex;
+    justify-content: center;
+    padding: .6rem;
+    background-color: var(--body_background);
+    transition: ease-in 0.2s;
+    border: var(--plain_link_border);
+}
+.footer__link:hover {
+    background-color: var(--main_color);
+    color: var(--plain_text_color_light);
+    border: var(--plain_link_border_light);
+}
+
+.footer__link:hover img {
+    filter: invert(100%) sepia(0%) saturate(1104%) hue-rotate(78deg) brightness(115%) contrast(100%);
+}

@@ -1,0 +1,103 @@
+:root {
+  font-family: Lato, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  * {box-sizing: border-box}
+
+  p {margin: 0}
+
+  h5 {margin: 0}
+
+  --main_color: #F16D7F;
+  --background_color_light: #F8F8F8;
+
+  --bar_background_dark: #242424;
+  --body_background: #fff;
+  --element_background_light: #eaeaea;
+  --element_background_middle: #E1E1E1;
+
+  --plain_link_background: #fff;
+  --plain_link_background_hover: var(--main_color);
+  --plain_link_border: 1px solid #A4A4A4;
+  --plain_link_border_light: 1px solid #ffffff;
+  --plain_link_border_hover: 1px solid  var(--main_color);;
+  --plain_link_color: #000;
+  --plain_link_color_hover: #fff;
+
+  --link_weight: 500;
+  --link_weight_light: 300;
+
+  --colored_link_background: var(--body_background);
+  --filled_link_background: var(--main_color);
+  --colored_link_background_hover: var(--body_background);
+  --colored_link_border: 1px solid  var(--main_color);;
+  --colored_link_color: #fff;
+  --colored_link_color_hover:  var(--main_color);;
+
+  --colored_text_color:  var(--main_color);;
+  --shaded_text_color: #6F6E6E;
+
+  --plain_text_color_dark: black;
+  --plain_text_color_light: #FBFBFB;
+  --plain_text_color_madium: #7e7e7e;
+  --plain_text_weight_bold: 700;
+  --plain_text_weight: 400;
+  --plain_text_weight_light: 300;
+
+  --h5_font_weight: 700;
+  --h5_font_weigh_light: 400;
+  --h5_font_color_dark: black;
+  --h5_font_color_light: #FBFBFB;
+
+  --input_border: 1px solid #E2E2E2;
+  --input_border_focus: 1px solid  var(--main_color);;
+  --input_color: #B1B1B1;
+}
+
+#root {
+  width: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color ease 0.3s;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  background: var(--body_background);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all ease 0.25s;
+}
+
+.center {
+  padding: 0 calc(50% - 600px);
+}
+
+
